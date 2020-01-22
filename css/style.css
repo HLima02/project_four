@@ -1,0 +1,128 @@
+body{
+	font-family: arial, sans-serif;
+	min-width: 320px;
+	background: url(../img/bg.jpg) no-repeat center;
+	background-attachment: fixed;
+}
+
+header{
+	background: #000;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+img{
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+#botao_titulo{
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+#titulo_pag{
+	font-size: 40px;
+	padding: 10px 20px;
+}
+
+/*Botao menu*/
+#menu_botao{
+	display: none;
+}
+
+#menu_botao div{
+	width: 30px;
+	height: 3px;
+	background: #fff;
+	margin: 2px 0;
+}
+
+
+/*Lista menu*/
+#menu_list ul{
+	display: flex;
+	margin-right: 15px;
+}
+
+#menu_list a{
+	color: #fff;
+	text-decoration: none;
+	padding: 5px 15px;
+	font-size: 20px;
+}
+
+/* ____________________ Seção 01 ___________________ */
+#banner{
+	width: 85%;
+	margin: 40px auto;
+	color: #fff;
+	text-align: center;
+	padding-bottom: 100px;
+}
+
+#banner_txt{
+	font-size: 25px;
+	padding: 100px 10px;
+	line-height: 40px;
+}
+
+#banner_botao button{
+	padding: 10px 15px;
+	font-size: 25px;
+	font-weight: bold;
+	border-radius: 10px;
+	background: #FE2E64;
+	border: none;
+	color: #fff;
+}
+
+/* ____________________ Seção 02 ___________________ */
+#secao02{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 95%;
+	margin: 60px auto;
+}
+
+.sec02_blocos{
+	width: 28%;
+	margin-bottom: 40px;
+}
+
+.bloco_txt{
+	background: #fff;
+	padding: 40px 25px;
+	text-align: center;
+	border-radius: 0 0 15px 15px;
+}
+
+.bloco_txt p{
+	font-size: 19px;
+	line-height: 30px;
+	text-align: justify;
+	margin-bottom: 30px;
+}
+
+.bloco_txt button{
+	font-size: 20px;
+	padding: 15px 20px;
+	border-radius: 10px;
+	border: none;
+	color: #fff;
+	background: #FE2E64;
+}
+
+
+
+
+
+
+
+
+
+
+
