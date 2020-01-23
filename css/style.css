@@ -1,4 +1,4 @@
-body{
+body,html{
 	font-family: arial, sans-serif;
 	min-width: 320px;
 	background: url(../img/bg.jpg) no-repeat center;
@@ -15,6 +15,8 @@ header{
 
 img{
 	max-width: 100%;
+	max-height: 100%;
+	vertical-align: middle;
 	margin: 0 auto;
 }
 
@@ -26,6 +28,10 @@ img{
 #titulo_pag{
 	font-size: 40px;
 	padding: 10px 20px;
+}
+
+#titulo_pag span{
+	color: #353638;
 }
 
 /*Botao menu*/
@@ -40,6 +46,28 @@ img{
 	margin: 2px 0;
 }
 
+#botao_fechar{
+	position: absolute;
+	right: 0;
+	margin: 10px;
+}
+
+#botao_fechar div{
+	width: 20px;
+	height: 4px;
+	background: #fff;
+	margin: 2px 0;
+
+}
+
+#bar_01{
+	transform: translate(0px, 7px) rotate(45deg);
+}
+
+#bar_02{
+	transform: translate(0px, 1px) rotate(-45deg);
+}
+
 
 /*Lista menu*/
 #menu_list ul{
@@ -48,7 +76,7 @@ img{
 }
 
 #menu_list a{
-	color: #fff;
+	color: #D8D8D8;
 	text-decoration: none;
 	padding: 5px 15px;
 	font-size: 20px;
@@ -89,7 +117,7 @@ img{
 }
 
 .sec02_blocos{
-	width: 28%;
+	width: 30%;
 	margin-bottom: 40px;
 }
 
@@ -115,6 +143,217 @@ img{
 	color: #fff;
 	background: #FE2E64;
 }
+
+
+
+/* ____________________ Seção 03 ___________________ */
+#secao03{
+	margin: 40px auto;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding: 40px 0;
+}
+
+.blocos_sec03 span{
+	font-size: 40px;
+	padding: 0 20px;
+}
+
+.blocos_sec03{
+	width: 42%;
+	color: #fff;
+	padding-bottom: 40px;
+	border-bottom: 1px solid #fff;
+	margin-bottom: 30px;
+	display: flex;
+}
+
+.blocos_sec03 h3{
+	font-size: 28px;
+	padding-bottom: 30px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.blocos_sec03 p{
+	font-size: 17px;
+	line-height: 22px;
+	text-align: justify;
+}
+
+
+/* ____________________ Seção 05 ___________________ */
+#secao04{
+	background: #FE2E64;
+	text-align: center;
+	padding: 50px 20px;
+	color: #fff;
+}
+
+#topo04{
+	width: 80%;
+	margin: 0 auto;
+}
+
+#topo04 h3{
+	font-size: 40px;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+
+#topo04 p{
+	font-size: 19px;
+}
+
+#formulario{
+	padding: 30px 0;
+}
+
+.campo{
+	padding: 8px;
+}
+
+input{
+	padding: 0 5px;
+}
+
+.campo input{
+	width: 80%;
+	height: 35px;
+	border-radius: 10px;
+	border: none;
+
+}
+
+textarea{
+	width: 80%;
+	height: 200px;
+	border-radius: 10px;
+	border: none;
+	padding: 5px;	
+}
+
+#botao_enviar{
+	background: transparent;
+	border: 1px solid #fff;
+	color: #fff;
+	margin-top: 30px;
+	padding: 10px 20px;
+	font-size: 25px;
+	border-radius: 15px;
+}
+
+/* ____________________ Rodape ___________________ */
+footer{
+	background: rgba(0, 0, 0, 0.9);
+	padding: 30px 20px;
+	color: #fff;
+	text-align: center;
+}
+
+#f_txt{
+	padding: 20px 0;
+}
+
+#redes_sociais{
+	padding: 10px 0;
+}
+
+#redes_sociais ul{
+	display: flex;
+	justify-content: center;
+}
+
+#redes_sociais li{
+	border: 1px solid #fff;
+	margin: 0 10px;
+	padding: 10px 14px;
+	border-radius: 30px;
+}
+
+#redes_sociais a{
+	color: #fff;
+	font-size: 25px;
+}
+
+
+/* _______________________ Media Querys ______________________ */
+@media only screen and (max-width: 850px){
+	#menu_list a{
+		font-size: 14px;
+	}
+
+	.sec02_blocos{
+		width: 45%;
+	}
+}
+
+
+@media only screen and (max-width: 665px){
+	header{
+		flex-direction: column;
+	}
+
+	#botao_titulo{
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+	}
+
+	#titulo_pag{
+		text-align: center;
+		font-size: 30px;
+	}
+
+	#menu_botao{
+		display: block;
+		position: absolute;
+		left: 5px;
+	}
+
+	#menu_list{
+		display: none;
+		position: fixed;
+		height: 100%;
+		width: 80%;
+		background: rgba(0,0,0,0.8);
+		left: 0;
+	}
+
+	#menu_list ul{
+		flex-direction: column;
+		margin-top: 30px;
+	}
+
+	#menu_list li{
+		padding: 20px 10px;
+		border-bottom: 1px solid #fff;
+		margin: 5px 10px;
+	}
+
+	.blocos_sec03{
+		width: 75%;
+	}
+
+	#botao_enviar{
+		font-size: 20px;
+	}
+
+	#redes_sociais a{
+		font-size: 20px;
+	}
+}
+
+
+@media only screen and (max-width: 550px){
+	.sec02_blocos{
+		width: 80%;
+	}
+}
+
+
+
 
 
 

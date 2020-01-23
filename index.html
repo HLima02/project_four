@@ -3,18 +3,20 @@
 	<head>
 		<title>Project Four</title>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 
 	<body>
 		<header>
 			<div id="botao_titulo">
 				<div id="titulo_pag">
-					<h1>Lorem ipsum</h1>
+					<h1>Lorem <span>ipsum</span></h1>
 				</div>
 
-				<div id="menu_botao">
+				<div id="menu_botao" onclick="abrirMenu()">
 					<div></div>
 					<div></div>
 					<div></div>
@@ -22,6 +24,10 @@
 			</div>
 
 			<nav id="menu_list">
+				<div id="botao_fechar" onclick="fecharMenu()">
+					<div id="bar_01"></div>
+					<div id="bar_02"></div>
+				</div>
 				<ul>
 					<li>
 						<a href="#">volutpat</a>
@@ -144,5 +150,101 @@
 				</div>
 			</div>
 		</section>
+
+		<section id="secao03">
+			<div class="blocos_sec03">
+				<span class="fa fa-camera"></span>
+				
+				<div>
+					<h3>Etiam nec </h3>
+
+					<p>nunc mattis netus quisque fames varius mattis aliquet dapibus, ipsum accumsan faucibus fames sollicitudin lectus eleifend orci, habitant suspendisse donec id aliquam.</p>
+				</div>
+			</div>
+
+			<div class="blocos_sec03">
+				<span class="fa fa-briefcase"></span>
+				
+				<div>
+					<h3>Etiam nec </h3>
+
+					<p>nunc mattis netus quisque fames varius mattis aliquet dapibus, ipsum accumsan faucibus fames sollicitudin lectus eleifend orci, habitant suspendisse donec id aliquam.</p>
+				</div>
+			</div>
+
+			<div class="blocos_sec03">
+				<span class="fa fa-wifi"></span>
+				
+				<div>
+					<h3>Etiam nec </h3>
+
+					<p>nunc mattis netus quisque fames varius mattis aliquet dapibus, ipsum accumsan faucibus fames sollicitudin lectus eleifend orci, habitant suspendisse donec id aliquam.</p>
+				</div>
+			</div>
+
+			<div class="blocos_sec03">
+				<span class="fa fa-plane"></span>
+				
+				<div>
+					<h3>Etiam nec </h3>
+
+					<p>nunc mattis netus quisque fames varius mattis aliquet dapibus, ipsum accumsan faucibus fames sollicitudin lectus eleifend orci, habitant suspendisse donec id aliquam.</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="secao04">
+			<div id="topo04">
+				<h3>Integer lobortis metus</h3>
+
+				<p>Nisl ullamcorper torquent gravida mi tempor neque lobortis fames, iaculis praesent mi dui sit elementum primis. </p>
+			</div>
+
+			<form action="#" method="post" id="formulario">
+				<div class="campo">
+					<input type="text" id="nome" placeholder=" NOME">
+				</div>
+
+				<div class="campo">
+					<input type="email" id="nome" placeholder=" EMAIL">
+				</div>
+
+				<div class="campo">
+					<textarea id="msg" placeholder="MENSAGEM"></textarea>
+				</div>
+
+				<div>
+					<input type="submit" id="botao_enviar" value="Enviar mensagem">
+				</div>
+			</form>
+		</section>
+
+		<footer>
+			<div id="f_txt">
+				<h3>Design: Hiago Lima. Images: Pixabay</h3>
+			</div>
+
+			<div id="redes_sociais">
+				<ul>
+					<li>
+						<a href="#">
+							<span class="fa fa-facebook"></span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="fa fa-instagram"></span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="fa fa-github"></span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+
+		<script type="text/javascript" src="js/script.js"></script>
 	</body>
 </html>
